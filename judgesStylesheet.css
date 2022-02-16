@@ -1,0 +1,77 @@
+#judgesHeading {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 399%;
+    padding-left: 20px;
+    padding-right: 90px;
+}
+
+.center {
+    padding-right: 70px;
+    text-align: center;
+}
+#judgesPhoto1 {
+    border-radius: 50%;
+    position: fixed;
+    max-width: 200px;
+    min-width: 200px;
+}
+
+
+#text1{
+    size: 100px;
+    padding-right: 645px;
+    padding-left: 500px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+.w3-container{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+/* OLD*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+.column {
+    float: left;
+    width: 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+ }
+  
+  p{
+    text-align: left;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .row{
+      margin-left: 180px;
+      margin-right: 170px;
+   }
+   .row2{
+     padding-top: 30px;
+     padding-bottom: 30px;
+   }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  #image{
+    border-radius: 50%;
+    max-width: 200px;
+    min-width: 200px;
+    min-height: 205px;
+    max-height: 205px;
+  }

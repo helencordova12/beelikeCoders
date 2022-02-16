@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<!--Stylesheets Used in this file-->
+<link rel="stylesheet" href="design.css">
+<link rel="stylesheet" href="messagesStyling.css">
+<link rel="stylesheet" href="judgesStylesheet.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--done-->
+
+<!--Website Icon-->
+<link id ="webLogo"rel = "icon" href = "photos/webLogo.png" type = "image/x-icon"> 
+<!--done-->
+
+<!--Webpage Title-->
+<title>Schedule | 2022</title>
+<!--ddone-->
+
+<!--Google Font(s)-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@300&display=swap" rel="stylesheet">
+<!--Used in JudgesPage HTML file-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@1,700&display=swap" rel="stylesheet">
+<!--done-->
+
+<head>
+    <div class="w3-bar w3-black">
+        <a id="menuTab" style="width:20%" a href="index.html"class="menuTab w3-bar-item w3-btn">Home</a>
+        <a id="menuTab" style="width:20%" a href="schedulePage.html"class="w3-bar-item w3-btn">Schedule</a>
+        <a id="menuTab" style="width:20%" a href="judgesPage.html" class="w3-bar-item w3-btn">Judges</a>
+        <a id="menuTab" style="width:20%" a href="sponsorsPage.html"class="w3-bar-item w3-btn">Sponsors</a>
+        <a id="menuTab" style="width:20%" a href="team.html"class="w3-bar-item w3-btn">Team</a>
+      </div>
+
+
+</head>
+<body>
+
+    
+    <div class="row">
+      <blockquote id="leftText"class="left">
+          The schedule will be up soon!
+      </blockquote>
+     
+    </div>
+
+
+    
+</body>
+
+<!--BOTTOM OF PAGE-->
+<hr class="horizontalLine" style="margin-top: 550px;">
+
+
+<div class="slideshow-container" style="float: left">
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img id="slideshowLogo"src="photos/laney.png" style="width:60%; max-width: 60%;min-width: 60%;">
+  
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img id="slideshowLogo"src="photos/ASLC.png" style="width:60%; max-width: 60%;min-width: 60%;">
+  
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img id="slideshowLogo"src="photos/EngineeringClub_BCC.png" style="width:60%; max-width: 60%;min-width: 60%;">
+  
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img id="slideshowLogo"src="photos/bsulogo.png" style="width:60%; max-width: 60%;min-width: 60%;">
+  
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img id="slideshowLogo"src="photos/mindfulUnionLogo.png" style="width:60%; max-width: 60%;min-width: 60%;">
+  
+  </div>
+  
+  </div>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> <!--if you add another logo image add another one of these-->
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+    <blockquote id="laneyMessage">Laney College does not discriminate on the basis of age, race, religion, color, gender identity, gender expression, 
+      sexual orientation, ancestry, citizenship, national origin, military or veteran status, disability, marital status, pregnancy, medical condition, 
+      and immigration status.<br><br>For questions, please email us at: beelikecoders@gmail.com</blockquote>
+    
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+</html>
