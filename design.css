@@ -154,13 +154,20 @@ body {
 }
 
 .logoSize{
-
-  margin-top: 65px; 
-  margin-right: 200px; 
+    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
+  margin-top: 70px; 
+  margin-right: 180px; 
   border-color: black;
   border-radius: 50%;
   border-style: double;
-  width: 32%;
-  min-height: 32%;
-  min-width: 32%;
+  float: right;
+
+}
+.fixedImage{
+
+    position: absolute;
+    right: 0px;
+    
 }
